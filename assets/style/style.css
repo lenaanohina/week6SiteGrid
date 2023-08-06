@@ -45,3 +45,13 @@
   width: 497px;
   margin-right: 130px;
 }
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 317px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
