@@ -55,3 +55,28 @@
   text-align: center;
   background-color: white;
 }
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 140px 1fr;
+  max-height: 860px;
+  min-width: 1200px;
+  margin: 110px 150px;
+}
+
+.works-text {
+  grid-area: 1/1/2/3;
+  justify-self: center;
+  text-align: center;
+  max-width: 508px;
+}
+
+.works-text p {
+  max-width: 417px;
+}
+
+.img-work {
+  justify-self: center;
+  margin: 12px;
+}
