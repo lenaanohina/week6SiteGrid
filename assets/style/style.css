@@ -1,11 +1,11 @@
-/* .body {
+.body {
   background-color: rgb(4, 15, 40);
-} */
+}
 
 .header {
   display: grid;
   grid-template-columns: 3fr 2.5fr 1fr;
-  grid-template-rows: 1.5fr 7fr;
+  grid-template-rows: 1.5fr rapeat(7, 1fr);
   min-height: 600px;
   align-items: center;
   grid-template-areas:
@@ -16,27 +16,56 @@
 .header-logo {
   grid-area: header-logo;
   margin-left: 142px;
+  margin-top: 40px;
 }
 
 .header-nav {
   grid-area: header-nav;
   display: grid;
   grid-template-columns: repeat(6, auto);
+  margin-top: 40px;
 }
 
 .header-register {
   grid-area: header-register;
-  margin-right: 158px;
+  margin-right: 162px;
+  display: inline-flex;
+  margin-top: 40px;
+  padding: 16px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 87px;
+  border: 2px solid #c4c4c4;
 }
 
 .header-text {
   grid-area: header-text;
   margin-left: 142px;
+  margin-top: 50px;
+  color: #c4c4c4;
+}
+
+a {
+  text-decoration: none;
+  color: #c4c4c4;
 }
 
 .header-bottom {
   grid-area: header-bottom;
   margin-left: 142px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 169px;
+  padding: 23px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 87px;
+  background: #fc3867;
+  color: white;
+}
+
+.bottom {
+  color: white;
 }
 
 .foto {
@@ -44,6 +73,7 @@
   justify-self: center;
   width: 497px;
   margin-right: 130px;
+  margin-top: 40px;
 }
 
 .data {
@@ -70,10 +100,12 @@
   justify-self: center;
   text-align: center;
   max-width: 508px;
+  color: white;
 }
 
 .works-text p {
   max-width: 417px;
+  color: #999;
 }
 
 .img-work {
@@ -83,18 +115,28 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 438px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 438px repeat(4, 1fr);
   grid-template-rows: 1fr 82px;
   max-height: 336px;
   align-items: center;
   justify-items: center;
   padding: 40px 120px;
-  background-color: aquamarine;
+  background-color: #070707;
+  color: #c4c4c4;
+}
+
+.footer-title {
+  color: white;
+  font-size: 18px;
 }
 
 .footer-info1 {
   grid-area: 1/1/2/2;
   max-width: 318px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .copyright {
