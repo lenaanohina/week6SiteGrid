@@ -50,6 +50,14 @@ a {
   color: #c4c4c4;
 }
 
+a:hover {
+  color: #fc3867;
+}
+
+a:active {
+  color: rgb(92, 246, 131);
+}
+
 .header-bottom {
   grid-area: header-bottom;
   margin-left: 142px;
@@ -68,6 +76,14 @@ a {
   color: white;
 }
 
+.bottom:hover {
+  color: #212226;
+}
+
+.bottom:active {
+  color: rgb(92, 246, 131);
+}
+
 .foto {
   grid-area: header-foto;
   justify-self: center;
@@ -84,6 +100,23 @@ a {
   align-items: center;
   text-align: center;
   background-color: white;
+}
+
+.title-ul {
+  color: #212226;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subtitle-ul {
+  color: #212226;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.small-ul {
+  color: #c4c4c4;
+  font-size: 16px;
 }
 
 .works {
