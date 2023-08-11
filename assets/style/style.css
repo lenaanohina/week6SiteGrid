@@ -13,6 +13,7 @@
   margin: 0px auto;
   padding: 0px 15px;
   background-color: rgb(4, 15, 40);
+  font-size: 18px;
 }
 
 .header {
@@ -74,8 +75,7 @@ a:active {
 
 .header-bottom {
   grid-area: header-bottom;
-  margin-left: 142px;
-  margin-bottom: 50px;
+  margin: 20%;
   display: flex;
   width: 169px;
   padding: 23px 10px;
@@ -101,9 +101,9 @@ a:active {
 .foto {
   grid-area: header-foto;
   justify-self: center;
-  width: 497px;
-  margin-right: 130px;
-  margin-top: 40px;
+  max-width: 497px;
+  /* margin-right: 130px;
+  margin-top: 40px; */
 }
 
 .data {
@@ -118,19 +118,19 @@ a:active {
 
 .title-ul {
   color: #212226;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 .subtitle-ul {
   color: #212226;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
 }
 
 .small-ul {
   color: #c4c4c4;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .works {
@@ -174,27 +174,32 @@ a:active {
 .footer {
   display: grid;
   grid-template-columns: 30% repeat(4, 1fr);
-  grid-template-rows: 1fr 82px;
+  grid-template-rows: 1fr 5%;
   max-height: 336px;
   align-items: center;
   justify-items: center;
-  padding: 40px 120px;
+  padding: 2%;
   background-color: #070707;
   color: #c4c4c4;
 }
 
 .footer-title {
   color: white;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .footer-info1 {
   grid-area: 1/1/2/2;
-  max-width: 318px;
+  /* max-width: 318px; */
 }
 
 ul {
   list-style-type: none;
+}
+
+.text-small {
+  color: #c4c4c4;
+  font-size: 0.875em;
 }
 
 .copyright {
