@@ -10,18 +10,6 @@
   font-size: 18px;
 }
 
-.header-register {
-  grid-area: header-register;
-  margin-right: 20%;
-  display: inline-flex;
-  margin-top: 1%;
-  padding: 16px 34px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 87px;
-  border: 2px solid #c4c4c4;
-}
-
 .container-img {
   display: grid;
   grid-gap: 20px;
@@ -59,6 +47,18 @@
   justify-content: center;
   gap: 5%;
   margin-top: 5%;
+}
+
+.header-register {
+  grid-area: header-register;
+  margin-right: 20%;
+  display: inline-flex;
+  margin-top: 1%;
+  padding: 16px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 87px;
+  border: 2px solid #c4c4c4;
 }
 
 .header-text {
@@ -109,16 +109,6 @@ a:active {
   grid-area: header-foto;
   justify-self: center;
   max-width: 90%;
-}
-
-.data {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: 317px;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  background-color: white;
 }
 
 .title-ul {
@@ -199,6 +189,15 @@ ul {
   .img-work {
     height: 320px;
   }
+  .data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 317px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -208,12 +207,22 @@ ul {
   .header-register {
     display: none;
   }
+  .data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 317px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+  }
   .footer-info2,
   .footer-info3,
   .footer-info4,
   .footer-info5 {
     display: none;
   }
+
   .footer-info1 {
     grid-area: 1/1/2/6;
   }
@@ -222,5 +231,34 @@ ul {
 @media screen and (max-width: 767px) {
   .container {
     max-width: none;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-logo {
+    order: -1;
+  }
+  .header-text {
+    margin: 5%;
+  }
+  .foto {
+    order: 1;
+  }
+  .header-bottom {
+    order: 1;
+  }
+  .data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .works-text {
+    justify-self: normal;
+    max-width: 65%;
+    padding: 10% 0;
+  }
+  .img-work {
+    max-width: 65%;
   }
 }
